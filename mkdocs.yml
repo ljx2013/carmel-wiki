@@ -14,6 +14,23 @@ theme:
     - content.tabs.link
     - header.autohide
     # 不再使用 content.mathjax
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
 
 nav:
   - 首页: index.md
