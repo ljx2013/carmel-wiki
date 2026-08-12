@@ -18,16 +18,16 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: "#FFC02D"
+      accent: "#FFC02D"
       toggle:
         icon: material/weather-night
         name: 切换到深色模式
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: "#FFC02D"
+      accent: "#FFC02D"
       toggle:
         icon: material/weather-sunny
         name: 切换到浅色模式
