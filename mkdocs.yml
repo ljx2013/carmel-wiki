@@ -1,6 +1,6 @@
-site_name: 塔尖 wiki
-site_url: https://wsy0655.github.io/algo-wiki/
-repo_url: https://github.com/wsy0655/algo-wiki
+site_name: Carmel Wiki
+site_url: https://ljx2013.github.io/carmel-wiki/
+repo_url: https://github.com/ljx2013/carmel-wiki
 repo_name: GitHub
 
 theme:
@@ -148,6 +148,7 @@ nav:
   #     - 最小生成树: 图论/最小生成树.md
   #     - 拓扑排序: 图论/拓扑排序.md
   - 数学:
+    - 数学符号: 数学/数学符号.md
     - 模运算: 数学/mod.md
     - 质数判定: 数学/质数判定.md
     - 筛法: 数学/筛法.md
@@ -157,7 +158,6 @@ nav:
     - 排列组合: 数学/排列组合.md
     - 二项式定理: 数学/二项式定理.md
     - 鸽笼原理: 数学/鸽笼原理.md
-    - exgcd: 数学/exgcd.md
     - 逆元: 数学/乘法逆元.md
     - 线性代数:
       - 线性代数简介: 数学/线性代数/线性代数简介.md
