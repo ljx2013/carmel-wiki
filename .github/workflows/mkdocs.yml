@@ -6,29 +6,44 @@ on:
       - master
 
 permissions:
-  contents: write  # ✅ 允许 workflow 写入 gh-pages 分支
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
     - name: Install dependencies
-      run: |
-        pip install mkdocs mkdocs-material
+      run: pip install mkdocs mkdocs-material
+
+    - name: Build site
+      run: mkdocs build
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: site
 
     - name: Deploy to GitHub Pages
-      run: mkdocs gh-deploy --force
-      env:
-        # ✅ 使用 GitHub 自动提供的 token 做身份验证
-        GIT_COMMITTER_NAME: github-actions
-        GIT_COMMITTER_EMAIL: github-actions@github.com
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      id: deployment
+      uses: actions/deploy-pages@v4
