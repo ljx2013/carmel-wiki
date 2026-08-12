@@ -19,6 +19,7 @@ nav:
   - 首页: index.md
   - 数学:
     - 数学符号: 数学 Math/数学符号 Math symbols.md
+    - 集合: 数学 Math/集合 set.md
 
 
 markdown_extensions:
