@@ -18,16 +18,16 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: "#FFC02D"
-      accent: "#FFC02D"
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: 切换到深色模式
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: "#FFC02D"
-      accent: "#FFC02D"
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: 切换到浅色模式
@@ -61,4 +61,5 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
+  - css/theme-color.css
   - css/palette-transition.css

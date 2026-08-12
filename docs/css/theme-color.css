@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Custom theme color: #FFC02D (Amber/Yellow)
+   ========================================================================== */
+
+/* Override Material's injected variables */
+:root {
+  --md-primary-bg-color: #FFC02D;
+  --md-primary-bg-color--dark: #E5A418;
+  --md-primary-fg-color: #000000DE;
+  --md-primary-fg-color--light: #0000008A;
+  --md-primary-fg-color--dark: #FFFFFFDE;
+  --md-accent-fg-color: #FFC02D;
+  --md-accent-fg-color--transparent: rgba(255, 192, 45, 0.1);
+  --md-accent-bg-color: #FFC02D;
+  --md-header-bg-color: #FFC02D;
+  --md-header-bg-color--dark: #E5A418;
+  --md-typeset-a-color: #B37A00;
+}
+
+/* Force header background via direct selector override */
+.md-header,
+.md-header__inner {
+  background-color: #FFC02D !important;
+  color: #000000DE !important;
+}
+
+/* Tab bar — use same yellow */
+.md-tabs,
+.md-tabs__list {
+  background-color: #FFC02D !important;
+  color: #000000DE !important;
+}
+
+/* Tab link color */
+.md-tabs__link {
+  color: #000000DE !important;
+}
+
+/* Active tab underline */
+.md-tabs__link[data-md-state="active"] {
+  color: #000000DE !important;
+}
+
+/* Nav sidebar active / hover — use accent yellow */
+.md-nav__link:hover,
+.md-nav__link:focus-visible {
+  color: #B37A00 !important;
+}
+
+.md-nav--primary .md-nav__item--active > .md-nav__link,
+.md-nav--primary .md-nav__link--active {
+  color: #FFC02D !important;
+}
+
+/* Admonition / code highlight with theme tint */
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: #FFC02D !important;
+}
+
+/* Links throughout content */
+.md-typeset a {
+  color: #B37A00 !important;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb,
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background-color: #FFC02D !important;
+}
