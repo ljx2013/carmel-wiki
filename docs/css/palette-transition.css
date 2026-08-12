@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Palette (light/dark) smooth transition effects
+   ========================================================================== */
+
+/* Material 切换主题时通过修改 [data-md-color-scheme] 属性触发 CSS 变量变更，
+   但默认不对变量过渡。这里对所有颜色相关属性加上平滑过渡，
+   时长 250ms，缓动函数 ease，既流畅又不拖沓。 */
+
+:root,
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] {
+  /* 对 CSS 自定义属性（颜色变量）启用过渡，用于受变量控制的元素 */
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease,
+    fill 250ms ease,
+    stroke 250ms ease;
+}
+
+html,
+body,
+main,
+.md-container,
+.md-main,
+.md-content,
+.md-sidebar,
+.md-sidebar__scrollwrap,
+.md-sidebar__inner {
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease;
+}
+
+/* 页眉、页脚、tabs、抽屉 */
+.md-header,
+.md-header__inner,
+.md-tabs,
+.md-tabs__list,
+.md-footer,
+.md-footer__inner,
+.md-drawer,
+.md-nav {
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease,
+    box-shadow 250ms ease;
+}
+
+/* 代码块、表格、admonition 卡片、提示框等组件 */
+.md-typeset pre,
+.md-typeset code,
+.md-typeset .codehilite,
+.md-typeset .highlight,
+.md-typeset table,
+.md-typeset th,
+.md-typeset td,
+.md-typeset blockquote,
+.md-typeset .admonition,
+.md-typeset details {
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease;
+}
+
+/* 按钮、输入框、搜索框 */
+.md-search-outer,
+.md-search,
+.md-search__form,
+.md-search__input,
+.md-button,
+.md-header__button,
+.md-nav__link,
+.md-tabs__link,
+.md-top {
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease,
+    opacity 250ms ease;
+}
+
+/* SVG 图标颜色（随 fill / stroke 过渡） */
+.md-icon svg,
+.md-header__button svg,
+.md-top svg {
+  transition: fill 250ms ease, stroke 250ms ease;
+}
+
+/* 链接颜色过渡 */
+.md-typeset a,
+.md-nav__title,
+.md-nav__item > .md-nav__link,
+.md-tabs__item > .md-tabs__link,
+.md-source__repository {
+  transition: color 250ms ease, background-color 250ms ease;
+}
+
+/* 滚动条（如果浏览器支持自定义滚动条颜色） */
+.md-sidebar__scrollwrap::-webkit-scrollbar,
+.md-content::-webkit-scrollbar {
+  transition: background-color 250ms ease;
+}
+
+/* 在用户偏好"减少动画"时禁用过渡，保证可访问性 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
+}

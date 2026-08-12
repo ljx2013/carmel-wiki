@@ -60,5 +60,5 @@ extra_javascript:
   # 再加载 MathJax
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-# 不加载 KaTeX CSS/JS
-# extra_css: …
+extra_css:
+  - css/palette-transition.css
