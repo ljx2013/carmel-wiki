@@ -155,7 +155,7 @@
 | $\min(a, b)$ | `\min(a, b)` | 最小值 |
 | $\gcd(a, b)$ | `\gcd(a, b)` | 最大公约数 |
 | $\bmod m$ | `\bmod m` | 取模 |
-| $\lcm(a, b)$ | `\lcm(a, b)` | 最小公倍数 |
+| $\operatorname{lcm}(a, b)$ | `\operatorname{lcm}(a, b)` | 最小公倍数 |
 
 !!! warning "注意"
     `\lcm` 在原生 MathJax 中可能未定义，可用 `\operatorname{lcm}` 替代：
