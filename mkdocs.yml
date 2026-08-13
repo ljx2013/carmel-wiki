@@ -37,9 +37,10 @@ nav:
   - 数学:
     - 数学符号: 数学 Math/数学符号 Math symbols.md
     - 集合: 数学 Math/集合 set.md
-    - 取模: 数学 Math/取模 mod.md
-    - 裴蜀定理: 数学 Math/裴蜀定理 Bezout identity.md
-    - 中国剩余定理: 数学 Math/中国剩余定理 CRT.md
+    - 模意义下的数和运算:
+      - 取模: 模意义下的数和运算/取模 mod.md
+      - 裴蜀定理: 模意义下的数和运算/裴蜀定理 Bezout identity.md
+      - 中国剩余定理: 模意义下的数和运算/中国剩余定理 CRT.md
 
 
 markdown_extensions:
