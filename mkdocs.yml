@@ -3,6 +3,9 @@ site_url: https://ljx2013.github.io/carmel-wiki/
 repo_url: https://github.com/ljx2013/carmel-wiki
 repo_name: GitHub
 
+hooks:
+  - hooks/auto_page_count.py
+
 theme:
   name: material
   language: zh

@@ -196,7 +196,7 @@ $$
 
 #### 方法 1：扩展欧几里得算法
 
-求解 $a x + m y = 1$，得到的 $x$ 即逆元。详细推导见 [裴蜀定理](裴蜀定理%20Bezout%20identity.md#2-求模逆元)。
+求解 $a x + m y = 1$，得到的 $x$ 即逆元。详细推导见 [裴蜀定理](裴蜀定理%20Bezout%20identity.md#2_1)。
 
 ```cpp
 long long exgcd(long long a, long long b, long long &x, long long &y) {
