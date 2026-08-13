@@ -15,6 +15,12 @@
   --md-header-bg-color: #FFC02D;
   --md-header-bg-color--dark: #E5A418;
   --md-typeset-a-color: #B37A00;
+
+  /* 首页计数器配色 —— 跟随主题暖黄 */
+  --carmel-primary: #B37A00;
+  --carmel-accent:  #E5A418;
+  --carmel-primary-rgb: 179, 122, 0;
+  --carmel-accent-rgb:  229, 164, 24;
 }
 
 /* Force header background via direct selector override */

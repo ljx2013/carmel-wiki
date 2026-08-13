@@ -56,13 +56,15 @@ markdown_extensions:
       generic: true
       inline_syntax: dollar
 
-# 加载官方 MathJax 脚本即可，不需要任何自定义 JS
 extra_javascript:
   # 先加载你的 MathJax 配置
   - js/mathjax-config.js
   # 再加载 MathJax
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # 首页「已收录 X 条页面」计数动画
+  - js/page-counter.js
 
 extra_css:
   - css/theme-color.css
   - css/palette-transition.css
+  - css/page-counter.css
