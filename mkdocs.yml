@@ -44,6 +44,9 @@ nav:
       - 取模: 模意义下的数和运算/取模 mod.md
       - 裴蜀定理: 模意义下的数和运算/裴蜀定理 Bezout identity.md
       - 中国剩余定理: 模意义下的数和运算/中国剩余定理 CRT.md
+    - 方程:
+      - 丢番图方程: 数学 Math/方程/丢番图方程.md
+      - 不定方程: 数学 Math/方程/不定方程.md
 
 
 markdown_extensions:
