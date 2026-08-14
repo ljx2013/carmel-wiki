@@ -1,0 +1,132 @@
+/* 导出 PDF 按钮样式 */
+
+.md-header__export-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.7rem;
+  margin-left: 0.4rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--md-primary-fg-color, #000000DE) !important;
+  background: rgba(0, 0, 0, 0.07);
+  transition: background 0.2s ease, transform 0.15s ease;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.md-header__export-btn:hover {
+  background: rgba(0, 0, 0, 0.14);
+  transform: translateY(-1px);
+}
+
+.md-header__export-btn:active {
+  transform: translateY(0);
+}
+
+.md-header__export-btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+  transform: none;
+}
+
+.md-header__export-btn svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.export-pdf-label {
+  line-height: 1;
+}
+
+.export-pdf-loading {
+  font-size: 0.72rem;
+  color: inherit;
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .md-header__export-btn {
+  color: #FFFFFFDE !important;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-header__export-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 小屏隐藏文字，只显示图标 */
+@media (max-width: 768px) {
+  .export-pdf-label {
+    display: none;
+  }
+  .md-header__export-btn {
+    padding: 0.4rem;
+    margin-left: 0.2rem;
+  }
+}
+
+/* 打印时隐藏导出按钮和站点导航 */
+@media print {
+  .md-header__export-btn,
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer,
+  .md-nav,
+  .md-content__button,
+  .md-search,
+  .md-top,
+  .md-banner {
+    display: none !important;
+  }
+
+  .md-main {
+    padding: 0 !important;
+  }
+
+  .md-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .md-content__inner {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 打印时显示所有内容，不裁切 */
+  .md-content__inner::before {
+    display: none !important;
+  }
+
+  /* 代码块不被截断 */
+  pre {
+    white-space: pre-wrap !important;
+    word-break: break-all;
+    page-break-inside: avoid;
+  }
+
+  /* 表格不被截断 */
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  /* 标题不与内容分离 */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  /* 链接显示 URL（可选） */
+  a[href]::after {
+    content: '' !important;
+  }
+}

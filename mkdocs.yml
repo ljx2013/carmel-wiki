@@ -94,8 +94,11 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   # 首页「已收录 X 条页面」计数动画
   - js/page-counter.js
+  # 导出 PDF 按钮
+  - js/export-pdf.js
 
 extra_css:
   - css/theme-color.css
   - css/palette-transition.css
   - css/page-counter.css
+  - css/export-pdf.css
