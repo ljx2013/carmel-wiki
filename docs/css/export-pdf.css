@@ -1,71 +1,61 @@
-/* 导出 PDF 按钮样式 */
+/* 导出 PDF 按钮样式 —— 与 Material 原生 header 按钮风格一致 */
 
 .md-header__export-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
-  padding: 0.4rem 0.7rem;
-  margin-left: 0.4rem;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-left: 0.2rem;
+  padding: 0;
+  border: none;
   border-radius: 0.4rem;
   cursor: pointer;
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: var(--md-primary-fg-color, #000000DE) !important;
-  background: rgba(0, 0, 0, 0.07);
-  transition: background 0.2s ease, transform 0.15s ease;
-  text-decoration: none;
-  white-space: nowrap;
-  user-select: none;
+  background: transparent;
+  color: var(--md-primary-fg-color, currentColor);
+  opacity: 0.7;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
 }
 
 .md-header__export-btn:hover {
-  background: rgba(0, 0, 0, 0.14);
-  transform: translateY(-1px);
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.md-header__export-btn:focus-visible {
+  opacity: 1;
+  box-shadow: 0 0 0 2px var(--md-accent-fg-color, #FFC02D);
 }
 
 .md-header__export-btn:active {
-  transform: translateY(0);
+  background: rgba(0, 0, 0, 0.14);
 }
 
 .md-header__export-btn:disabled {
-  opacity: 0.6;
+  opacity: 0.4;
   cursor: wait;
-  transform: none;
 }
 
 .md-header__export-btn svg {
-  width: 1rem;
-  height: 1rem;
-  fill: currentColor;
+  width: 1.1rem;
+  height: 1.1rem;
   flex-shrink: 0;
 }
 
-.export-pdf-label {
-  line-height: 1;
-}
-
 .export-pdf-loading {
-  font-size: 0.72rem;
-  color: inherit;
+  font-size: 0.6rem;
+  line-height: 1;
+  font-family: var(--md-text-font-family, monospace);
 }
 
-/* 深色模式适配 */
+/* 深色模式 */
 [data-md-color-scheme="slate"] .md-header__export-btn {
-  color: #FFFFFFDE !important;
-  background: rgba(255, 255, 255, 0.12);
+  color: var(--md-primary-fg-color, #FFFFFFDE);
 }
 
 [data-md-color-scheme="slate"] .md-header__export-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* 小屏隐藏文字，只显示图标 */
-@media (max-width: 768px) {
-  .export-pdf-label {
-    display: none;
-  }
-  .md-header__export-btn {
-    padding: 0.4rem;
-    margin-left: 0.2rem;
-  }
+  background: rgba(255, 255, 255, 0.12);
 }
