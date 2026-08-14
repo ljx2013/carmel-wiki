@@ -3,8 +3,8 @@
   'use strict';
 
   var EXPORT_BTN_ID = 'export-pdf-btn';
-  // 极简下载图标：向下箭头 + 底线
-  var EXPORT_BTN_ICON = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v8m0 0l3-3m-3 3L5 7M3 12h10"/></svg>';
+  // 纯 CSS 下载图标：向下箭头 + 底线
+  var EXPORT_BTN_ICON = '<span class="export-pdf-icon" aria-hidden="true"></span>';
   var HTML2PDF_CDN = 'https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.2/dist/html2pdf.bundle.min.js';
 
   function loadHtml2Pdf() {

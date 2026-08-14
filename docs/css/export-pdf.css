@@ -39,10 +39,39 @@
   cursor: wait;
 }
 
-.md-header__export-btn svg {
-  width: 1.1rem;
-  height: 1.1rem;
-  flex-shrink: 0;
+/* 纯 CSS 下载图标：向下箭头 + 底线 */
+.export-pdf-icon {
+  display: inline-block;
+  position: relative;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-bottom: 0.13rem solid currentColor;
+}
+
+/* 垂直杆 */
+.export-pdf-icon::before {
+  content: '';
+  position: absolute;
+  bottom: 0.12rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.13rem;
+  height: 0.42rem;
+  background: currentColor;
+}
+
+/* 箭头（三角形） */
+.export-pdf-icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 0.24rem solid transparent;
+  border-right: 0.24rem solid transparent;
+  border-top: 0.3rem solid currentColor;
 }
 
 .export-pdf-loading {
