@@ -1,0 +1,22 @@
+/* 打印 / 导出 PDF 时只保留正文，隐藏顶栏、侧边栏、页脚、返回顶部等装饰元素 */
+@media print {
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer,
+  .md-top,
+  #pdf-download-btn,
+  .md-header__option,
+  .md-header__options {
+    display: none !important;
+  }
+
+  /* 让正文占满纸张宽度 */
+  .md-grid {
+    max-width: none !important;
+  }
+
+  .md-content {
+    margin: 0 !important;
+  }
+}
