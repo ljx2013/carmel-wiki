@@ -57,6 +57,9 @@ extra_javascript:
   - js/mathjax-config.js
   # 再加载 MathJax
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # 顶栏「下载本页 PDF」按钮
+  - assets/js/pdf-download.js
 
-# 不加载 KaTeX CSS/JS
-# extra_css: …
+extra_css:
+  # 打印 / 导出 PDF 时隐藏顶栏等装饰
+  - assets/css/print-hide.css
