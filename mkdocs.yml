@@ -6,6 +6,25 @@ repo_name: carmel-wiki
 theme:
   name: material
   language: zh
+  logo: assets/images/logo.ico
+  favicon: assets/images/logo.ico
+  palette:
+    # 白昼模式（橘色顶栏）
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: orange
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到黑夜模式
+    # 黑夜模式（橘色顶栏）
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: orange
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到白昼模式
   features:
     - navigation.tabs
     - navigation.top
