@@ -38,6 +38,7 @@ nav:
   - 首页: index.md
   - 笔记:
     - freopen的使用: 笔记/freopen的使用.md
+    - 关闭输入输出流: 笔记/关闭输入输出流.md
 markdown_extensions:
   - admonition
   - codehilite:
