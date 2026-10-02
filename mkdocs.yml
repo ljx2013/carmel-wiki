@@ -37,8 +37,11 @@ theme:
 nav:
   - 首页: index.md
   - 笔记:
-    - freopen的使用: 笔记/freopen的使用.md
-    - 关闭输入输出流: 笔记/关闭输入输出流.md
+    - 前置知识:
+      - freopen的使用: 笔记/前置知识/freopen的使用.md
+      - 关闭输入输出流: 笔记/前置知识/关闭输入输出流.md
+    - 理论:
+      - 时间与空间复杂度: 笔记/理论/时间与空间复杂度.md
 markdown_extensions:
   - admonition
   - codehilite:
