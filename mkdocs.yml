@@ -1,7 +1,7 @@
-site_name: 塔尖 wiki
-site_url: https://ljx2013.github.io/luogu-problem-wiki/
-repo_url: https://github.com/ljx2013/luogu-problem-wiki
-repo_name: luogu-problem-wiki
+site_name: Carmel-wiki
+site_url: https://ljx2013.github.io/carmel-wiki/
+repo_url: https://github.com/ljx2013/carmel-wiki
+repo_name: carmel-wiki
 
 theme:
   name: material
@@ -16,8 +16,9 @@ theme:
     # 不再使用 content.mathjax
 
 nav:
-
   - 首页: index.md
+  - 笔记:
+    - freopen的使用: 笔记/freopen的使用.md
 markdown_extensions:
   - admonition
   - codehilite:
