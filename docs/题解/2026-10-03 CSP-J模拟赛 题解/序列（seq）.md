@@ -108,8 +108,24 @@ $$
 代码如下：
 
 ```c++
-
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+int main(){
+	freopen("seq.in","r",stdin);
+	freopen("seq.out","w",stdout);
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+	ll T,n,m,k;
+	cin>>T;
+	for(int i=1;i<=T;i++){
+		cin>>n>>m>>k;
+		if(m<=n*(k-1)) cout<<m<<'\n';
+		else cout<<(n-1)*(k-1)+((m-(n-1)*(k-1))%k)<<'\n';
+	} 
+	return 0;
+}
 ```
-
 
 

@@ -27,6 +27,7 @@
 
 注意：这两个整数都可能超过 32 位有符号整数的表示范围。
 【样例 1 输入】
+
 ---------
 
     5 2
@@ -47,6 +48,7 @@
 
 所有同学完成时刻之和为 3+2+6+4+5=20，最后一个同学完成于时刻 6。
 【样例 2 输入】
+
 ---------
 
     3 5
@@ -94,6 +96,7 @@
 
 由于$n,m\leq10^5$，需要一种能快速去除最小值、插入新值的数据结构——小根退`priority_queue<llmvector<ll>,greater<ll>>`正好满足，单次操作 $O(\log{m})$ ，总复杂度 $O(n\log{m})$ ，完全可以通过。
 算法流程
+
 ----
 
 1. 读入 n,m 和每个同学的打饭时间 ti​。
@@ -115,7 +118,38 @@
 代码如下：
 
 ```c++
-
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+priority_queue<ll,vector<ll>,greater<ll>>q;
+int n,m;
+int stu[100005];
+int main(){
+	freopen("canteen.in","r",stdin);
+	freopen("canteen.out","w",stdout);
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+	cin>>n>>m;
+	for(int i=1;i<=n;i++){
+		cin>>stu[i];
+	}
+	for(int i=1;i<=m;i++){
+		q.push(0);
+	}
+	ll sum=0,maxx=0;
+	for(int i=1;i<=n;i++){
+		ll pos=q.top();
+		q.pop();
+		ll t=pos;
+		ll f=t+stu[i];
+		sum+=f;
+		maxx=max(f,maxx);
+		q.push(f);
+	}
+	cout<<sum<<' '<<maxx<<'\n';
+	return 0;
+}
 ```
 
 

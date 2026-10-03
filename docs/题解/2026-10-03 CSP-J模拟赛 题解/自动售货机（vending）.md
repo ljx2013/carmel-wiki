@@ -38,7 +38,6 @@
 输出到文件 $vending.out$ 中。
 
 输出一行包含一个整数，表示小 T 最多能购买的商品总数。
-
 输入数据 1
 ------
 
@@ -57,10 +56,12 @@
 初始时，小 T 有 50 枚普通币（面值 1）和 6 枚高级币（面值 10）。 通过以下购买策略，小 T 可以买到 4 件商品：
 
 * 支付 2 枚高级币购买饮料 1（价格 20）。不找零。
+
 * 支付 2 枚高级币购买饮料 2（价格 12）。找回 8 枚普通币。此时小 T 手中有 58 枚普通币和 2 枚高级币。
+
 * 支付 2 枚高级币和 10 枚普通币购买零食 2（价格 30）。不找零。此时小 T 手中有 48 枚普通币和 0 枚高级币。
+
 * 支付 22 枚普通币购买零食 1（价格 22）。不找零。
-  
   他最多只能买到 4 件商品，因此答案为 4。
 
 ## 输入数据 2
@@ -80,7 +81,6 @@
 初始时，小 T 没有高级币。由于饮料只能用高级币购买，他无法购买任何饮料。
 
 * 支付 600000777666777 枚普通币购买零食 1（价格 777666777），可以找回大量普通币。
-  
   他最多只能买到 1 件商品，答案为 1。
 
 输入数据 3
@@ -223,43 +223,47 @@ ll x,y;
 ll a[(int)2e5+5],b[(int)2e5+5];
 ll sum[(int)2e5+5];
 int main(){
-	freopen("vending.in","r",stdin);
-	freopen("vending.out","w",stdout);
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
-	cin>>n>>m>>k;
-	cin>>x>>y;
-	for(int i=1;i<=n;i++){
-		cin>>a[i];
-	}
-	sort(a+1,a+n+1);
-	for(int i=1;i<=m;i++){
-		cin>>b[i];
-	}
-	sort(b+1,b+m+1);
-	for(int i=1;i<=n;i++){
-		sum[i]=sum[i-1]+a[i];
-	}
-	ll ans=0;
-	ll gj=0;
-	ll zl=0;
-	for(int i=0;i<=m;i++){
-		if(i>0){
-			ll need=(b[i]+k-1)/k;
-			ll zl_=need*k-b[i];
-			gj+=need;
-			zl+=zl_;
-		}
-		if(gj>y) break;
-		ll sygj=y-gj;
-		ll sypt=x+zl;
-		ll pos1=sypt+sygj*k;
-		ll pos=upper_bound(sum,sum+n+1,pos1)-sum;
-		pos--;
-		ans=max(ans,(ll)i+pos);
-	}
-	cout<<ans<<endl;
-	return 0;
+    freopen("vending.in","r",stdin);
+    freopen("vending.out","w",stdout);
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    cin>>n>>m>>k;
+    cin>>x>>y;
+    for(int i=1;i<=n;i++){
+        cin>>a[i];
+    }
+    sort(a+1,a+n+1);
+    for(int i=1;i<=m;i++){
+        cin>>b[i];
+    }
+    sort(b+1,b+m+1);
+    for(int i=1;i<=n;i++){
+        sum[i]=sum[i-1]+a[i];
+    }
+    ll ans=0;
+    ll gj=0;
+    ll zl=0;
+    for(int i=0;i<=m;i++){
+        if(i>0){
+            ll need=(b[i]+k-1)/k;
+            ll zl_=need*k-b[i];
+            gj+=need;
+            zl+=zl_;
+        }
+        if(gj>y) break;
+        ll sygj=y-gj;
+        ll sypt=x+zl;
+        ll pos1=sypt+sygj*k;
+        ll pos=upper_bound(sum,sum+n+1,pos1)-sum;
+        pos--;
+        ans=max(ans,(ll)i+pos);
+    }
+    cout<<ans<<endl;
+    return 0;
 }
 ```
+
+
+
+
