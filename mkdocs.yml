@@ -42,6 +42,12 @@ nav:
       - 关闭输入输出流: 笔记/前置知识/关闭输入输出流.md
     - 理论:
       - 时间与空间复杂度: 笔记/理论/时间与空间复杂度.md
+  - 题解:
+    - 2026-10-03 CSP-J模拟赛 题解:
+      - 幸运号码（lucky）: 题解/2026-10-03 CSP-J模拟赛 题解/幸运号码（lucky）.md
+      - 序列（seq）: 题解/2026-10-03 CSP-J模拟赛 题解/序列（seq）.md
+      - 自动售货机（vending）: 题解/2026-10-03 CSP-J模拟赛 题解/自动售货机（vending）.md
+      - 食堂打饭（canteen）: 题解/2026-10-03 CSP-J模拟赛 题解/食堂打饭（canteen）.md
 markdown_extensions:
   - admonition
   - codehilite:
