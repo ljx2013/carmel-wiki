@@ -94,7 +94,7 @@
 
 观察可得，$n_{max} \leq 10^5$ ，因此我们可以将时间复杂度维持在 $O(n)$ 左右即可，所以我们并不能直接模拟每个时刻，观察得：每个窗口的下一次空闲时刻就是当前排队最前面的同学打饭开始的时刻。因此我们只需要维护每个窗口当前变为空闲的时刻。每当有一个同学要打饭时，选择最早空闲的窗口，该同学在这个时刻开始打饭，$完成时刻=窗口空闲时刻+t_i$ 。然后把该窗口的下一次空闲时刻更新为这个完成时刻，放回队列中。
 
-由于$n,m\leq10^5$，需要一种能快速去除最小值、插入新值的数据结构——小根退`priority_queue<llmvector<ll>,greater<ll>>`正好满足，单次操作 $O(\log{m})$ ，总复杂度 $O(n\log{m})$ ，完全可以通过。
+由于$n,m\leq10^5$，需要一种能快速去除最小值、插入新值的数据结构——小根堆`priority_queue<llmvector<ll>,greater<ll>>`正好满足，单次操作 $O(\log{m})$ ，总复杂度 $O(n\log{m})$ ，完全可以通过。
 算法流程
 
 ----
@@ -125,31 +125,29 @@ priority_queue<ll,vector<ll>,greater<ll>>q;
 int n,m;
 int stu[100005];
 int main(){
-	freopen("canteen.in","r",stdin);
-	freopen("canteen.out","w",stdout);
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
-	cin>>n>>m;
-	for(int i=1;i<=n;i++){
-		cin>>stu[i];
-	}
-	for(int i=1;i<=m;i++){
-		q.push(0);
-	}
-	ll sum=0,maxx=0;
-	for(int i=1;i<=n;i++){
-		ll pos=q.top();
-		q.pop();
-		ll t=pos;
-		ll f=t+stu[i];
-		sum+=f;
-		maxx=max(f,maxx);
-		q.push(f);
-	}
-	cout<<sum<<' '<<maxx<<'\n';
-	return 0;
+    freopen("canteen.in","r",stdin);
+    freopen("canteen.out","w",stdout);
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    cin>>n>>m;
+    for(int i=1;i<=n;i++){
+        cin>>stu[i];
+    }
+    for(int i=1;i<=m;i++){
+        q.push(0);
+    }
+    ll sum=0,maxx=0;
+    for(int i=1;i<=n;i++){
+        ll pos=q.top();
+        q.pop();
+        ll t=pos;
+        ll f=t+stu[i];
+        sum+=f;
+        maxx=max(f,maxx);
+        q.push(f);
+    }
+    cout<<sum<<' '<<maxx<<'\n';
+    return 0;
 }
 ```
-
-
