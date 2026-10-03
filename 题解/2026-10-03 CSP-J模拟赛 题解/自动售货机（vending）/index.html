@@ -1,0 +1,1891 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ljx2013.github.io/carmel-wiki/%E9%A2%98%E8%A7%A3/2026-10-03%20CSP-J%E6%A8%A1%E6%8B%9F%E8%B5%9B%20%E9%A2%98%E8%A7%A3/%E8%87%AA%E5%8A%A8%E5%94%AE%E8%B4%A7%E6%9C%BA%EF%BC%88vending%EF%BC%89/">
+      
+      
+        <link rel="prev" href="../%E5%BA%8F%E5%88%97%EF%BC%88seq%EF%BC%89/">
+      
+      
+        <link rel="next" href="../%E9%A3%9F%E5%A0%82%E6%89%93%E9%A5%AD%EF%BC%88canteen%EF%BC%89/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/logo.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>自动售货机（vending） - Carmel-wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/css/print-hide.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vending" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Carmel-wiki" class="md-header__button md-logo" aria-label="Carmel-wiki" data-md-component="logo">
+      
+  <img src="../../../assets/images/logo.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Carmel-wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              自动售货机（vending）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="orange"  aria-label="切换到黑夜模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到黑夜模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="orange"  aria-label="切换到白昼模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到白昼模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ljx2013/carmel-wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    carmel-wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/freopen%E7%9A%84%E4%BD%BF%E7%94%A8/" class="md-tabs__link">
+          
+  
+  
+  笔记
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E5%B9%B8%E8%BF%90%E5%8F%B7%E7%A0%81%EF%BC%88lucky%EF%BC%89/" class="md-tabs__link">
+          
+  
+  
+  题解
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Carmel-wiki" class="md-nav__button md-logo" aria-label="Carmel-wiki" data-md-component="logo">
+      
+  <img src="../../../assets/images/logo.ico" alt="logo">
+
+    </a>
+    Carmel-wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ljx2013/carmel-wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    carmel-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    笔记
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    笔记
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前置知识
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    前置知识
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/freopen%E7%9A%84%E4%BD%BF%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    freopen的使用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/%E5%85%B3%E9%97%AD%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关闭输入输出流
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    理论
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    理论
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%AC%94%E8%AE%B0/%E7%90%86%E8%AE%BA/%E6%97%B6%E9%97%B4%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    时间与空间复杂度
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    题解
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    题解
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026-10-03 CSP-J模拟赛 题解
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2026-10-03 CSP-J模拟赛 题解
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B9%B8%E8%BF%90%E5%8F%B7%E7%A0%81%EF%BC%88lucky%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    幸运号码（lucky）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BA%8F%E5%88%97%EF%BC%88seq%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    序列（seq）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动售货机（vending）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动售货机（vending）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题目描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入格式
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出格式
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="输出数据 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        样例 1 解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="输出数据 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        样例 2 解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 6
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 6
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 7
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 7
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数据范围与提示
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题意转化
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心观察
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心观察">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 买饮料的代价
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 买零食的代价
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 贪心策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A3%9F%E5%A0%82%E6%89%93%E9%A5%AD%EF%BC%88canteen%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    食堂打饭（canteen）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题目描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入格式
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出格式
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="输出数据 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        样例 1 解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="输出数据 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        样例 2 解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 6
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 6
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入数据 7
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输出数据 7
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数据范围与提示
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题意转化
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心观察
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心观察">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 买饮料的代价
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 买零食的代价
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 贪心策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="vending">自动售货机（vending）题解<a class="headerlink" href="#vending" title="Permanent link">&para;</a></h1>
+<h2 id="_1">题目描述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>小 T 来到了学校新建的全自动无人便利店。便利店的支付系统支持两种代币：普通币（面值 $1$ 元）和高级币（面值 $K$ 元）。</p>
+<p>便利店内有两台售货机：一台是零食售货机，出售 $n$ 种零食；另一台是饮料售货机，出售 $m$ 种饮料。零食的编号为 $1 \sim n$，饮料的编号为 $1 \sim m$。</p>
+<p>第 $i$ 种零食的价格为 $A_i$ 元，第 $j$ 种饮料的价格为 $B_j$ 元。</p>
+<p>在支付规则上，这两台机器有所不同：</p>
+<ul>
+<li>零食售货机同时接受普通币和高级币的混合支付。</li>
+<li>饮料售货机只接受高级币支付。</li>
+</ul>
+<p>两台售货机的找零机制相同：所有的找零均使用普通币（面值 $1$ 元）退还给买家。</p>
+<p>每种特定的零食或饮料，最多只能购买一件。</p>
+<p>小 T 现在口袋里有 $X$ 枚普通币和 $Y$ 枚高级币。他希望用手头的这些代币购买尽可能多的商品。</p>
+<p>请你帮小 T 计算一下，在最优的购买策略下，他最多能买到多少件商品？</p>
+<h2 id="_2">输入格式<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>从文件 $vending.in$ 中读入数据。</p>
+<p>第一行包含三个正整数 $n,m,K$，分别表示零食的种类数、饮料的种类数以及高级币的面值。</p>
+<p>第二行包含两个非负整数 $X,Y$，分别表示小 T 拥有的普通币数量和高级币数量。</p>
+<p>第三行包含 $n$ 个正整数 $A_1,A_2,\dots,A_n$，表示各零食的价格。</p>
+<p>第四行包含 $m$ 个正整数 $B_1,B_2,\dots,B_m$，表示各饮料的价格。</p>
+<h2 id="_3">输出格式<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>输出到文件 $vending.out$ 中。</p>
+<p>输出一行包含一个整数，表示小 T 最多能购买的商品总数。</p>
+<h2 id="1">输入数据 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>2 3 10
+50 6
+22 30
+20 12 24
+</code></pre></div>
+
+<h2 id="1_1">输出数据 1<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>4
+</code></pre></div>
+
+<h3 id="1_2">样例 1 解释<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<p>初始时，小 T 有 50 枚普通币（面值 1）和 6 枚高级币（面值 10）。 通过以下购买策略，小 T 可以买到 4 件商品：</p>
+<ul>
+<li>支付 2 枚高级币购买饮料 1（价格 20）。不找零。</li>
+<li>支付 2 枚高级币购买饮料 2（价格 12）。找回 8 枚普通币。此时小 T 手中有 58 枚普通币和 2 枚高级币。</li>
+<li>支付 2 枚高级币和 10 枚普通币购买零食 2（价格 30）。不找零。此时小 T 手中有 48 枚普通币和 0 枚高级币。</li>
+<li>支付 22 枚普通币购买零食 1（价格 22）。不找零。</li>
+</ul>
+<p>他最多只能买到 4 件商品，因此答案为 4。</p>
+<h2 id="2">输入数据 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>1 7 67
+677677677766666 0
+777666777
+20 12 24 67 67 67 67
+</code></pre></div>
+
+<h2 id="2_1">输出数据 2<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>1
+</code></pre></div>
+
+<h3 id="2_2">样例 2 解释<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<p>初始时，小 T 没有高级币。由于饮料只能用高级币购买，他无法购买任何饮料。</p>
+<ul>
+<li>支付 600000777666777 枚普通币购买零食 1（价格 777666777），可以找回大量普通币。</li>
+</ul>
+<p>他最多只能买到 1 件商品，答案为 1。</p>
+<h2 id="3">输入数据 3<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>1 1 2
+0 1
+1
+1
+</code></pre></div>
+
+<h2 id="3_1">输出数据 3<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>2
+</code></pre></div>
+
+<h2 id="4">输入数据 4<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>1 1 2
+0 1
+2
+100
+</code></pre></div>
+
+<h2 id="4_1">输出数据 4<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>1
+</code></pre></div>
+
+<h2 id="5">输入数据 5<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>2 1 10
+0 1
+5 5
+9
+</code></pre></div>
+
+<h2 id="5_1">输出数据 5<a class="headerlink" href="#5_1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>2
+</code></pre></div>
+
+<h2 id="6">输入数据 6<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>2 1 10
+1 1
+5 7
+10
+</code></pre></div>
+
+<h2 id="6_1">输出数据 6<a class="headerlink" href="#6_1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>1
+</code></pre></div>
+
+<h2 id="7">输入数据 7<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>1 2 10 1 2
+100
+6 6
+</code></pre></div>
+
+<h2 id="7_1">输出数据 7<a class="headerlink" href="#7_1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>2
+</code></pre></div>
+
+<h2 id="_4">数据范围与提示<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>对于所有测试数据，保证：</p>
+<ul>
+<li>$1≤n,m≤2×10^5$</li>
+<li>$2≤K≤10^9$</li>
+<li>$0≤X≤10^{15}$</li>
+<li>$0≤Y≤10^9$</li>
+<li>$1≤Ai​,Bj​≤10^9$</li>
+<li>输入的所有数值均为整数。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>测试点编号</th>
+<th style="text-align: right;">分值</th>
+<th style="text-align: right;">$n, m \le$</th>
+<th>特殊性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1 \sim 2$</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td>无</td>
+</tr>
+<tr>
+<td>$3 \sim 4$</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">$2 \times 10^5$</td>
+<td>A</td>
+</tr>
+<tr>
+<td>$5 \sim 7$</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">$2 \times 10^5$</td>
+<td>B</td>
+</tr>
+<tr>
+<td>$8 \sim 11$</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">2000</td>
+<td>无</td>
+</tr>
+<tr>
+<td>$12 \sim 14$</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">$2 \times 10^5$</td>
+<td>C</td>
+</tr>
+<tr>
+<td>$15 \sim 20$</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">$2 \times 10^5$</td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>特殊性质 A：对所有 $j$，均有 $B_j &gt; YK$。</li>
+<li>特殊性质 B：$\sum_{j=1}^{m} \left\lceil \frac{B_j}{K} \right\rceil \le Y$。</li>
+<li>特殊性质 C：对所有 $j$，均有 $B_j \le K$。</li>
+</ul>
+<h2 id="_5">题解<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_6">题意转化<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>有两类商品：</p>
+<ul>
+<li><strong>零食</strong>：可以用普通币和高级币混合支付，找零为普通币。</li>
+<li><strong>饮料</strong>：只能用高级币支付，找零为普通币。</li>
+</ul>
+<p>目标是买尽可能多的商品。</p>
+<h2 id="_7">核心观察<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="1_3">1. 买饮料的代价<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h3>
+<p>买第 $j$ 种饮料价格 $B_j$，必须用高级币支付。假设用了 $c = \lceil B_j / K \rceil$ 枚高级币，找零 $cK - B_j$ 元普通币。</p>
+<p>所以<strong>买一种饮料的净代价</strong>：</p>
+<ul>
+<li>消耗高级币 $\lceil B_j / K \rceil$ 枚</li>
+<li>反而<strong>增加</strong>普通币 $cK - B_j$ 元</li>
+</ul>
+<h3 id="2_3">2. 买零食的代价<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h3>
+<p>零食可以用普通币直接买，也可以用高级币支付后找零。因为普通币和高级币之间的"汇率"是 $1$ 高级币 $= K$ 普通币，所以只要总资产够就能买。因此零食只需要按价格从小到大排序，能用钱买就买。</p>
+<h3 id="3_2">3. 贪心策略<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h3>
+<p>枚举<strong>买多少种饮料</strong>（一定是买最便宜的 $i$ 种，因为每种饮料的"高级币消耗"和"普通币返还"都是固定的，越便宜的组合越省高级币）。</p>
+<p>对每种 $i$：</p>
+<ul>
+<li>计算前 $i$ 种饮料消耗的高级币总数 $gj$ 和返还的普通币总数 $zl$。</li>
+<li>如果 $gj &gt; Y$，说明买不起了，直接退出。</li>
+<li>剩余高级币 $sygj = Y - gj$，剩余普通币 $sypt = X + zl$。</li>
+<li>把这些高级币全部换成普通币：总钱数 $= sypt + sygj \times K$。</li>
+<li>用这些钱买尽量多的零食（前缀和 + 二分）。</li>
+<li>更新答案。</li>
+</ul>
+<p>代码如下：</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+<span class="cp">#define ll long long</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<span class="n">ll</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">k</span><span class="p">;</span>
+<span class="n">ll</span><span class="w"> </span><span class="n">pt</span><span class="p">,</span><span class="n">gj</span><span class="p">;</span>
+<span class="n">ll</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">;</span>
+<span class="n">ll</span><span class="w"> </span><span class="n">a</span><span class="p">[(</span><span class="kt">int</span><span class="p">)</span><span class="mf">2e5</span><span class="o">+</span><span class="mi">5</span><span class="p">],</span><span class="n">b</span><span class="p">[(</span><span class="kt">int</span><span class="p">)</span><span class="mf">2e5</span><span class="o">+</span><span class="mi">5</span><span class="p">];</span>
+<span class="n">ll</span><span class="w"> </span><span class="n">sum</span><span class="p">[(</span><span class="kt">int</span><span class="p">)</span><span class="mf">2e5</span><span class="o">+</span><span class="mi">5</span><span class="p">];</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<span class="w">    </span><span class="n">freopen</span><span class="p">(</span><span class="s">"vending.in"</span><span class="p">,</span><span class="s">"r"</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
+<span class="w">    </span><span class="n">freopen</span><span class="p">(</span><span class="s">"vending.out"</span><span class="p">,</span><span class="s">"w"</span><span class="p">,</span><span class="n">stdout</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&gt;&gt;</span><span class="n">m</span><span class="o">&gt;&gt;</span><span class="n">k</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">x</span><span class="o">&gt;&gt;</span><span class="n">y</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">sort</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">a</span><span class="o">+</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">m</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">sort</span><span class="p">(</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">b</span><span class="o">+</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="n">sum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">sum</span><span class="p">[</span><span class="n">i</span><span class="mi">-1</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">ll</span><span class="w"> </span><span class="n">ans</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">ll</span><span class="w"> </span><span class="n">gj</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">ll</span><span class="w"> </span><span class="n">zl</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">m</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">){</span>
+<span class="w">            </span><span class="n">ll</span><span class="w"> </span><span class="n">need</span><span class="o">=</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="n">k</span><span class="mi">-1</span><span class="p">)</span><span class="o">/</span><span class="n">k</span><span class="p">;</span>
+<span class="w">            </span><span class="n">ll</span><span class="w"> </span><span class="n">zl_</span><span class="o">=</span><span class="n">need</span><span class="o">*</span><span class="n">k</span><span class="o">-</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">            </span><span class="n">gj</span><span class="o">+=</span><span class="n">need</span><span class="p">;</span>
+<span class="w">            </span><span class="n">zl</span><span class="o">+=</span><span class="n">zl_</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">gj</span><span class="o">&gt;</span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ll</span><span class="w"> </span><span class="n">sygj</span><span class="o">=</span><span class="n">y</span><span class="o">-</span><span class="n">gj</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ll</span><span class="w"> </span><span class="n">sypt</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">zl</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ll</span><span class="w"> </span><span class="n">pos1</span><span class="o">=</span><span class="n">sypt</span><span class="o">+</span><span class="n">sygj</span><span class="o">*</span><span class="n">k</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ll</span><span class="w"> </span><span class="n">pos</span><span class="o">=</span><span class="n">upper_bound</span><span class="p">(</span><span class="n">sum</span><span class="p">,</span><span class="n">sum</span><span class="o">+</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">pos1</span><span class="p">)</span><span class="o">-</span><span class="n">sum</span><span class="p">;</span>
+<span class="w">        </span><span class="n">pos</span><span class="o">--</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ans</span><span class="o">=</span><span class="n">max</span><span class="p">(</span><span class="n">ans</span><span class="p">,(</span><span class="n">ll</span><span class="p">)</span><span class="n">i</span><span class="o">+</span><span class="n">pos</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">ans</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.top", "content.code.annotate", "content.code.copy", "content.tabs.link", "header.autohide"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../js/mathjax-config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../assets/js/pdf-download.js"></script>
+      
+    
+  </body>
+</html>
