@@ -893,17 +893,6 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        输入数据 1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         输出数据 1
       
     </span>
@@ -913,7 +902,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_2" class="md-nav__link">
+  <a href="#1_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         样例 1 解释
@@ -1123,7 +1112,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_3" class="md-nav__link">
+  <a href="#1_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         1. 买饮料的代价
@@ -1275,17 +1264,6 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        输入数据 1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         输出数据 1
       
     </span>
@@ -1295,7 +1273,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_2" class="md-nav__link">
+  <a href="#1_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         样例 1 解释
@@ -1505,7 +1483,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_3" class="md-nav__link">
+  <a href="#1_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         1. 买饮料的代价
@@ -1584,27 +1562,36 @@
 <p>第四行包含 $m$ 个正整数 $B_1,B_2,\dots,B_m$，表示各饮料的价格。</p>
 <h2 id="_3">输出格式<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>输出到文件 $vending.out$ 中。</p>
-<p>输出一行包含一个整数，表示小 T 最多能购买的商品总数。</p>
-<h2 id="1">输入数据 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>输出一行包含一个整数，表示小 T 最多能购买的商品总数。
+输入数据 1</p>
+<hr />
 <div class="codehilite"><pre><span></span><code>2 3 10
 50 6
 22 30
 20 12 24
 </code></pre></div>
 
-<h2 id="1_1">输出数据 1<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h2>
+<h2 id="1">输出数据 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>4
 </code></pre></div>
 
-<h3 id="1_2">样例 1 解释<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<h3 id="1_1">样例 1 解释<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <p>初始时，小 T 有 50 枚普通币（面值 1）和 6 枚高级币（面值 10）。 通过以下购买策略，小 T 可以买到 4 件商品：</p>
 <ul>
-<li>支付 2 枚高级币购买饮料 1（价格 20）。不找零。</li>
-<li>支付 2 枚高级币购买饮料 2（价格 12）。找回 8 枚普通币。此时小 T 手中有 58 枚普通币和 2 枚高级币。</li>
-<li>支付 2 枚高级币和 10 枚普通币购买零食 2（价格 30）。不找零。此时小 T 手中有 48 枚普通币和 0 枚高级币。</li>
-<li>支付 22 枚普通币购买零食 1（价格 22）。不找零。</li>
+<li>
+<p>支付 2 枚高级币购买饮料 1（价格 20）。不找零。</p>
+</li>
+<li>
+<p>支付 2 枚高级币购买饮料 2（价格 12）。找回 8 枚普通币。此时小 T 手中有 58 枚普通币和 2 枚高级币。</p>
+</li>
+<li>
+<p>支付 2 枚高级币和 10 枚普通币购买零食 2（价格 30）。不找零。此时小 T 手中有 48 枚普通币和 0 枚高级币。</p>
+</li>
+<li>
+<p>支付 22 枚普通币购买零食 1（价格 22）。不找零。
+  他最多只能买到 4 件商品，因此答案为 4。</p>
+</li>
 </ul>
-<p>他最多只能买到 4 件商品，因此答案为 4。</p>
 <h2 id="2">输入数据 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>1 7 67
 677677677766666 0
@@ -1619,9 +1606,9 @@
 <h3 id="2_2">样例 2 解释<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
 <p>初始时，小 T 没有高级币。由于饮料只能用高级币购买，他无法购买任何饮料。</p>
 <ul>
-<li>支付 600000777666777 枚普通币购买零食 1（价格 777666777），可以找回大量普通币。</li>
+<li>支付 600000777666777 枚普通币购买零食 1（价格 777666777），可以找回大量普通币。
+  他最多只能买到 1 件商品，答案为 1。</li>
 </ul>
-<p>他最多只能买到 1 件商品，答案为 1。</p>
 <h2 id="3">输入数据 3<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>1 1 2
 0 1
@@ -1748,7 +1735,7 @@
 </ul>
 <p>目标是买尽可能多的商品。</p>
 <h2 id="_7">核心观察<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<h3 id="1_3">1. 买饮料的代价<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h3>
+<h3 id="1_2">1. 买饮料的代价<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
 <p>买第 $j$ 种饮料价格 $B_j$，必须用高级币支付。假设用了 $c = \lceil B_j / K \rceil$ 枚高级币，找零 $cK - B_j$ 元普通币。</p>
 <p>所以<strong>买一种饮料的净代价</strong>：</p>
 <ul>
