@@ -6,6 +6,8 @@ repo_name: carmel-wiki
 theme:
   name: material
   language: zh
+  # 主题覆盖目录：注入「难度标签」徽章（overrides/main.html）
+  custom_dir: overrides
   logo: assets/images/logo.ico
   favicon: assets/images/logo.ico
   palette:
@@ -80,3 +82,5 @@ extra_javascript:
 extra_css:
   # 打印 / 导出 PDF 时隐藏顶栏等装饰
   - assets/css/print-hide.css
+  # 文章难度标签配色（入门→NOI/NOI+/CTS 共 8 级）
+  - assets/css/difficulty.css

@@ -1,0 +1,47 @@
+/* 难度标签徽章：在每篇文章正文标题下方显示，颜色由 data-level 决定 */
+.difficulty-badge {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+  background: #9e9e9e;            /* 未匹配时的兜底灰 */
+  letter-spacing: 0.02em;
+}
+
+/* 8 个难度等级（由易到难） */
+/* 入门 — 红 */
+.difficulty-badge[data-level="入门"] { background: #e53935; }
+
+/* 普及− — 橙 */
+.difficulty-badge[data-level="普及−"] { background: #fb8c00; }
+.difficulty-badge[data-level="普及-"] { background: #fb8c00; }
+
+/* 普及 — 黄（深字保证可读） */
+.difficulty-badge[data-level="普及"] { background: #fdd835; color: #333; }
+
+/* 普及+/提高− — 绿 */
+.difficulty-badge[data-level="普及+/提高−"] { background: #43a047; }
+.difficulty-badge[data-level="普及+/提高-"] { background: #43a047; }
+
+/* 提高 — 青 */
+.difficulty-badge[data-level="提高"] { background: #00acc1; }
+
+/* 提高+/省选− — 天蓝 */
+.difficulty-badge[data-level="提高+/省选−"] { background: #29b6f6; }
+.difficulty-badge[data-level="提高+/省选-"] { background: #29b6f6; }
+
+/* 省选/NOI− — 紫 */
+.difficulty-badge[data-level="省选/NOI−"] { background: #8e24aa; }
+.difficulty-badge[data-level="省选/NOI-"] { background: #8e24aa; }
+
+/* NOI/NOI+/CTS — 黑蓝 */
+.difficulty-badge[data-level="NOI/NOI+/CTS"] { background: #1a237e; }
+
+/* 打印 / 导出 PDF 时隐藏难度徽章（保持版面干净） */
+@media print {
+  .difficulty-badge { display: none; }
+}
