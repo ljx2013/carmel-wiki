@@ -1770,9 +1770,14 @@
 </code></pre></div>
 <h3 id="_11">解线性同余方程<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <p>方程 $ax\equiv c\pmod m$ 有解 <strong>当且仅当</strong> $g=\gcd(a,m)\mid c$。
-先用 exgcd 求出 $ax_0+my_0=g$，两边乘 $c/g$ 得到特解 $x^* = x_0\cdot(c/g)$，通解为</p>
-<div class="arithmatex">\[x\equiv x^\*\pmod{m/g},\qquad\text{即}\quad x=x^\*+\frac{m}{g}\,t\ (t\in\mathbb{Z})\]</div>
-<p>最小非负解同样用 <code>(x* % (m/g) + m/g) % (m/g)</code> 归一化。</p>
+先用 exgcd 求出 $ax_0+my_0=g$，两边乘 $c/g$ 得到特解 $x^{*} = x_0 \cdot (c/g)$，通解为</p>
+<div class="arithmatex">\[
+x \equiv x^{*} \pmod{\frac{m}{g}},\qquad \text{即} \quad x = x^{*} + \frac{m}{g}t \quad (t \in \mathbb{Z})
+\]</div>
+<p>最小非负解同样用</p>
+<div class="highlight"><pre><span></span><code><span class="p">((</span><span class="n">x_star</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="n">m</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">g</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">m</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">g</span><span class="p">))</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="n">m</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">g</span><span class="p">)</span>
+</code></pre></div>
+<p>归一化。</p>
 <h2 id="_12">小结<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
